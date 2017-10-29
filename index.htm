@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Rang De Games Arena</title>
+
+        <link rel="shortcut icon" type="image/png" href="./Rang-De-logo-ico.jpg"/>
+
+        <!-- Bootstrap CSS -->
+        <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Fontawesome CSS -->
+        <link href="./bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- Stylesheet CSS -->
+        <link href="./css/style.css" rel="stylesheet">
+
+    </head>
+    <body>
+        
+        <div class="preloader">
+            <div class="text-center icon">
+                <i class="fa fa-gamepad fa-5x"></i>
+                <div class="loading center">
+                    <div class="loading-bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Rang De Games</a>
+            </div>
+        
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control nav-form-field" placeholder="Search" id="query">
+                    </div>
+                </form>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+        
+        <div class="container-fluid">
+            <div class="col-lg-8 col-sm-8 col-md-8" id="normal_col">
+                <div class="row">
+                    <h2 class="">Top Rated Games</h2>
+                    <div id="rated_games"></div>
+                </div>
+                <div class="row">
+                    <h2 class="">Action Games</h2>
+                    <div id="top_action_games"></div>
+                </div>
+                <div class="row">
+                    <h2 class="">Racing Games</h2>
+                    <div id="top_race_games"></div>
+                </div>
+                <div class="row">
+                    <h2 class="">Adventure Games</h2>
+                    <div id="top_adv_games"></div>
+                </div>
+                <div class="row">
+                    <h2 class="">Sports Games</h2>
+                    <div id="top_sports_games"></div>
+                </div>
+                <div class="row">
+                    <h2 class="">RPG Games</h2>
+                    <div id="top_rpg_games"></div>
+                </div>
+                <div class="row">
+                    <h2 class="">Strategy Games</h2>
+                    <div id="top_str_games"></div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-sm-1 col-md-1" id="normal_blank"></div>
+            <div class="col-lg-3 col-sm-3 col-md-3 col-xs-12" style="position:fixed;right:0">
+                <div class="row"><br>
+                    <br>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="" id="show_all_action">
+                            ACTION
+                        </label>
+                    </div>
+                    <br>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value=""  id="show_all_adv">
+                            ADVENTURE
+                        </label>
+                    </div>
+                    <br>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value=""  id="show_all_racing">
+                            RACING
+                        </label>
+                    </div>
+                    <br>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="" id="show_all_sports">
+                            SPORTS
+                        </label>
+                    </div>
+                    <br>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value=""  id="show_all_rpg">
+                            RPG
+                        </label>
+                    </div>
+                    <br>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="" id="show_all_stra">
+                            STRATEGY
+                        </label>
+                    </div>
+                    <br>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="" id="show_all">
+                            ALL GENRES
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-8 col-sm-8" id="list_genres" style="display:none;">
+                <div class="row">
+                    <h2 class="">Rang De Games Arena</h2>
+                    <div id="rang_games"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- jQuery -->
+        <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- Custom JavaScript -->
+        <script src="./js/gamesarena.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
